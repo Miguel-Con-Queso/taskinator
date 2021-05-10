@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var taskIdCounter = 0;
 
 var formEl = document.querySelector("#task-form");
@@ -225,3 +226,16 @@ pageContentEl.addEventListener("click", taskButtonHandler);
 
 // for changing the status
 pageContentEl.addEventListener("change", taskStatusChangeHandler);
+=======
+var buttonEl = document.querySelector("#save-task");
+var tasksToDoEl = document.querySelector("#tasks-to-do");
+
+var createTaskHandler = function() {
+    var listItemEl = document.createElement("li");
+    listItemEl.className = "task-item";
+    listItemEl.textContent = "This is a new task.";
+    tasksToDoEl.appendChild(listItemEl);
+};
+
+buttonEl.addEventListener("click", createTaskHandler);
+>>>>>>> eda72458a82c2c515d2857453be9b220cc2faba9
